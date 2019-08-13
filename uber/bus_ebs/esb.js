@@ -1,8 +1,9 @@
-/* módulo para desarrollo web para la construcción de la API */
-var express = require('express')
 /*********************************************************************/
 /** ************************* MODULOS UTILIZADOS **********************/
 /*********************************************************************/
+
+/* módulo para desarrollo web para la construcción de la API */
+var express = require('express')
 
 /* módulo para la implementación de servidor web http */
 var http = require('http')
@@ -125,7 +126,11 @@ app.post('/bus', (req, res) => {
             return
           }
           infoPiloto.nombre = piloto.piloto.nombre
-          res.send(infoPiloto)
+          var obj5 = { status: false,
+            mensaje: 'El piloto: ' + infoPiloto.nombre + ' ira por usted, este esta ubicado en: latitud' + infoPiloto.latitud +
+        ', altitud:' + infoPiloto.altitud }
+          var myJSON5 = JSON.parse(JSON.stringify(obj5))
+          res.send(myJSON5)
         })
       })
     })

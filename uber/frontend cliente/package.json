@@ -1,0 +1,15 @@
+{
+  "name": "frontend-cliente",
+  "version": "1.0.0",
+  "description": "Aplicacion web que solicita el servicio de uber basado en ubicacion",
+  "main": "cliente_uber.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jenifer Palacios",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "jade": "^1.11.0"
+  }
+}
