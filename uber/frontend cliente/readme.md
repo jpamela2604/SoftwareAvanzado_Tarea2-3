@@ -66,12 +66,12 @@ Para hacer uso de la aplicacion ingresar en el navegador de preferencia la direc
 ```
 Donde se visualiza una pagina que simula que ya hemos pasado por el login y estamos preparados para pedir un viaje.
 
-![principal](https://raw.githubusercontent.com/jpamela2604/SoftwareAvanzado_Tarea2-3/master/uber/frontend%20cliente/principal.PNG.png)
+![principal](https://raw.githubusercontent.com/jpamela2604/SoftwareAvanzado_Tarea2-3/master/uber/frontend%20cliente/principal.PNG)
 
 Una vez estemos en esta ruta llenamos ambos campos (latitud y altitud) los cuales son obligatorios, dichos campos indican el destino.
 Una vez estemos seguros dar click al boton buscar viaje.
 
-![IngresoDatos](https://raw.githubusercontent.com/jpamela2604/SoftwareAvanzado_Tarea2-3/master/uber/frontend%20cliente/IngresoDatos.PNG.png)
+![IngresoDatos](https://raw.githubusercontent.com/jpamela2604/SoftwareAvanzado_Tarea2-3/master/uber/frontend%20cliente/IngresoDatos.PNG)
 
 Si no hubo ningun problema interno podremos observar un mensaje como el siguiente donde se nos notifique que piloto esta asignado para el viaje.
 
