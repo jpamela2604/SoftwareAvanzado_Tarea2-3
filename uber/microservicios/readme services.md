@@ -9,7 +9,7 @@ Antes de iniciar el proyecto crear el archivo packege.json con el comando:
 ```html
     npm init
 ```
-En el cual se debe ingresar datos como el nombre del paquete, version, repositorio de git, palabras claves entre otro. Seguidamente hay que instalarle el modulo "express" para que nos permita crear las APIs, con el comando: 
+En el cual se debe ingresar datos como el nombre del p  aquete, version, repositorio de git, palabras claves entre otro. Seguidamente hay que instalarle el modulo "express" para que nos permita crear las APIs, con el comando: 
  
 ```html
     npm install express
@@ -36,7 +36,7 @@ Se crearon dos listas, una para guardar los pilotos que estan disponibles (lista
 3. bodyParser
 ## CONFIGURACION BODYPARSER
 
-Se configura el bodyparser para que analice los cuerpos de solicitud entrantes en un middleware antes de sus manejadores, 
+Se configura el bodyparser para que analice los cuerpos de solicitud entrantes en un middleware antes de sus manejadores.
 
 ## APIs
 

@@ -1,0 +1,14 @@
+{
+  "name": "bus_ebs",
+  "version": "1.0.0",
+  "description": "Simulador de un Enterprise Service Bus",
+  "main": "esb.js",
+  "scripts": {
+    "test": "node esb.js"
+  },
+  "author": "Jenifer Palacios",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
