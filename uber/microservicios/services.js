@@ -93,6 +93,7 @@ app.post('/piloto', (req, res) => {
 *   3. Solicitud de ubicación (rastreo) desde la administración del servicio de carros
 */
 app.post('/rastreo', (req, res) => {
+  console.log(req.body)
   console.log('El ' + req.body.TIPO + ' "' + req.body.ID + '" desea conocer su ubicacion')
   var num = Math.random()
   if (num < 0.05) {
