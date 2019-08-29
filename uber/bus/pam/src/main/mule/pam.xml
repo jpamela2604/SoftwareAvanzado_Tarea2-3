@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<mule xmlns:http="http://www.mulesoft.org/schema/mule/http" xmlns="http://www.mulesoft.org/schema/mule/core"
+	xmlns:doc="http://www.mulesoft.org/schema/mule/documentation"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.mulesoft.org/schema/mule/core http://www.mulesoft.org/schema/mule/core/current/mule.xsd
+http://www.mulesoft.org/schema/mule/http http://www.mulesoft.org/schema/mule/http/current/mule-http.xsd">
+	<http:listener-config name="HTTP_Listener_config" doc:name="HTTP Listener config" doc:id="38fb31fe-35ae-473f-8851-96e743d1d340">
+		<http:listener-connection host="localhost" port="8081" />
+	</http:listener-config>
+	<http:request-config name="HTTP_Request_configuration" doc:name="HTTP Request configuration" doc:id="25bb8ab7-26d2-4b20-8c18-552693a8f6b3">
+		<http:request-connection port="7002" host="localhost"/>
+	</http:request-config>
+	<flow name="pamFlow" doc:id="13c6d5a3-9bc8-4b57-b17f-a4b80dcd857d" >
+		<http:listener doc:name="Listener" doc:id="63def149-637b-43d0-9674-3ca0d025e530" config-ref="HTTP_Listener_config" path="/bus"/>
+		<logger level="INFO" doc:name="Logger" doc:id="1b0f22eb-e81a-4b06-ba9c-0c7e4a404e20" />
+		<choice doc:name="Choice" doc:id="f2c722fb-b98e-4ff8-b681-35dc7fa1cbaa" >
+			<when expression="#[payload.pais=='502']">
+				<http:request method="POST" doc:name="Request" doc:id="4af12e41-dd25-4d56-9323-0f07ef18f8ea" config-ref="HTTP_Request_configuration" path="/getServicio"/>
+			</when>
+		</choice>
+	</flow>
+</mule>
