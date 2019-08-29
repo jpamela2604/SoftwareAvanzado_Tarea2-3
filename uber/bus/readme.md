@@ -3,7 +3,7 @@ Esta carpeta contiene el proyecto de mulesoft con el cual se configuro el bus, e
 
 ## Diagrama de interraccion
 
-![bus](busLogic.png)
+![bus](https://raw.githubusercontent.com/jpamela2604/SoftwareAvanzado_Tarea2-3/tarea4/uber/bus/busLogic.PNG)
 
 
 > **Listener**. 
