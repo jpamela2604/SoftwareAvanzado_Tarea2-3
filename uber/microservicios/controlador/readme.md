@@ -1,5 +1,5 @@
 # Contenido
-Esta carpeta contiene la implementacion simulada de un Enterprise Service Bus, implementandolo como un API
+Esta carpeta contiene la implementacion de un servicio que tramita la solicitud de un carro. Llamando a tres microservicos mas: Viaje, Piloto y Ubicacion.
 
 Antes de iniciar el proyecto crear el archivo packege.json con el comando:
 
@@ -12,11 +12,11 @@ En el cual se debe ingresar datos como el nombre del paquete, version, repositor
     npm install express
 ```
 ---
-## ARCHIVO "ebs.js"
+## ARCHIVO "service.js"
 En este archivo encontramos las siguientes secciones.
 - [MODULOS UTILIZADOS](#MODULOS-UTILIZADOS)
 - [CONFIGURACION BODYPARSER](#CONFIGURACION-BODYPARSER)
-- [API ESB](#api-ESB)
+- [API](#api)
 - [SERVIDOR](#servidor)
 ---
 ## MODULOS UTILIZADOS
@@ -30,9 +30,13 @@ En este archivo encontramos las siguientes secciones.
 
 Se configura el bodyparser para que analice los cuerpos de solicitud entrantes en un middleware antes de sus manejadores.
 
-## API ESB
+## API
 
-Este API orquesta la funcionalidad principal, mediante la invocacion de las APIS en un orden logico de tal manera que si ocurre un error lo maneja internamente.
+Este API maneja la funcionalidad principal, mediante la invocacion de las APIS en un orden logico de tal manera que si ocurre un error lo maneja internamente.
+
+A continuacion se muestra un flujo de trabajo de como funciona internamente este servicio.
+
+![workflow](workflow.png)
 
 ## SERVIDOR
 

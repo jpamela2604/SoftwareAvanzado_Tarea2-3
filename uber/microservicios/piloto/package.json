@@ -1,0 +1,11 @@
+{
+  "name": "piloto",
+  "version": "1.0.0",
+  "description": "microservicio piloto",
+  "main": "servicio.js",
+  "scripts": {
+    "test": "node servicio.js"
+  },
+  "author": "Jenifer Palacios",
+  "license": "ISC"
+}

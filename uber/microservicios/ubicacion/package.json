@@ -1,0 +1,11 @@
+{
+  "name": "ubicacion",
+  "version": "1.0.0",
+  "description": "microservicio de ubicacion cliente/piloto",
+  "main": "servicio.js",
+  "scripts": {
+    "test": "node servicio.js"
+  },
+  "author": "Jenifer Palacios",
+  "license": "ISC"
+}

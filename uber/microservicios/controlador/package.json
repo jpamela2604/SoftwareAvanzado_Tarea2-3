@@ -1,7 +1,7 @@
 {
-  "name": "bus_ebs",
+  "name": "controlador",
   "version": "1.0.0",
-  "description": "Simulador de un Enterprise Service Bus",
+  "description": "Servicio que alberga la logica de pedir una unidad",
   "main": "esb.js",
   "scripts": {
     "test": "node esb.js"

@@ -1,0 +1,11 @@
+{
+  "name": "viaje",
+  "version": "1.0.0",
+  "description": "microservicioViaje",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jenifer Palacios",
+  "license": "ISC"
+}

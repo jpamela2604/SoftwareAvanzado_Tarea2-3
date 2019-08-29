@@ -30,8 +30,9 @@ app.get('/', function (req, res) {
 app.post('/call', function (req, res) {
   Request.post({
     headers: { 'content-type': 'application/json' },
-    url: 'http://localhost:7002/bus',
+    url: 'http://localhost:8081/bus',
     body: JSON.stringify({
+      'pais':'502',
       ID: 'C5896',
       altitud: req.body.altitud,
       latitud: req.body.latitud
